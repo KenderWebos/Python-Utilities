@@ -1,0 +1,11 @@
+{
+    "info":
+    {
+        "name" : "KenderWebos",
+        "version" : "1.0",
+        "description" : "KenderWebos",
+        "author" : "Kender",
+        "license" : "MIT",
+        "website" : "http://kender.com.br"
+    }
+}

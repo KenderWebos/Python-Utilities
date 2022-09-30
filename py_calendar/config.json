@@ -1,0 +1,10 @@
+{
+    "userconfig":{
+        "userName":"none",
+        "password":"none"
+    },
+
+    "config":{
+        "using_db":"main"
+    }
+}
