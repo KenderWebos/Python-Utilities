@@ -1,0 +1,5 @@
+para generar EXE:
+pyinstaller --onefile --windowed code_name.py
+
+para generar EXE con icono:
+pyinstaller --onefile --windowed --icon=./DIRECCION code_name.py
