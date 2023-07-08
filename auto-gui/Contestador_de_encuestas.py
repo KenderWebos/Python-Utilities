@@ -2,32 +2,45 @@ from time import time
 import time
 import pyautogui
 
-print('Iniciando...')
-time.sleep(5)
+TIME_TO_START = 5
+TESTING_MODE = False
 
-pyautogui.press('tab')
-pyautogui.press('right')
-pyautogui.press('right')
-pyautogui.press('right')
-pyautogui.press('tab')
-for i in range(5):
-    pyautogui.press('tab')
-    pyautogui.press('right')
-pyautogui.press('tab')
-for i in range(6):
-    pyautogui.press('tab')
-    pyautogui.press('right')
-pyautogui.press('tab')
-for i in range(4):
-    pyautogui.press('tab')
-    pyautogui.press('right')
-pyautogui.press('tab')
-for i in range(4):
+pyautogui.alert(f"Iniciando en {TIME_TO_START} segundos...", 'Alerta')
+
+time.sleep(TIME_TO_START)
+
+def ContestarEncuesta():
     pyautogui.press('tab')
     pyautogui.press('right')
 
-#pyautogui.hotkey('ctrl', 'shift', 'esc')
-# pyautogui.write('Holaaaa amigos del youtube', interval=0.05)
+    pyautogui.press('tab')
+    pyautogui.press('right')
+
+    for i in range(18):
+        pyautogui.press('tab')
+        pyautogui.press('right')
+        pyautogui.press('right')
+        pyautogui.press('left')
+    pyautogui.press('tab')
+
+    pyautogui.press('tab')
+    pyautogui.press('right')
+    pyautogui.press('right')
+    pyautogui.press('right')
+    pyautogui.press('right')
+
+def ContestarSeccion(cantidad, indice_satisfaccion):
+    # la satisfaccion va de 1 a 3 donde 1 es muy insatisfecho y 3 es muy satisfecho
+    for i in range(cantidad):
+        random = random.randint(1, 3)
+        pyautogui.press('tab')
+
+        for j in range(random):
+            pyautogui.press('right')
+        pyautogui.press('left')
+
+    pyautogui.press('tab')
+
 pyautogui.alert('Formulario contestado exitosamente', 'Alerta')
 input("terminar?")
 
