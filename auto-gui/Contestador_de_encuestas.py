@@ -7,8 +7,6 @@ TESTING_MODE = False
 
 pyautogui.alert(f"Iniciando en {TIME_TO_START} segundos...", 'Alerta')
 
-time.sleep(TIME_TO_START)
-
 def ContestarEncuesta():
     pyautogui.press('tab')
     pyautogui.press('right')
@@ -16,7 +14,7 @@ def ContestarEncuesta():
     pyautogui.press('tab')
     pyautogui.press('right')
 
-    for i in range(18):
+    for i in range(17):
         pyautogui.press('tab')
         pyautogui.press('right')
         pyautogui.press('right')
@@ -40,6 +38,10 @@ def ContestarSeccion(cantidad, indice_satisfaccion):
         pyautogui.press('left')
 
     pyautogui.press('tab')
+
+ContestarEncuesta()
+
+time.sleep(TIME_TO_START)
 
 pyautogui.alert('Formulario contestado exitosamente', 'Alerta')
 input("terminar?")
