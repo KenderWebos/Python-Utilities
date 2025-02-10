@@ -43,7 +43,7 @@ ContestarEncuesta()
 
 time.sleep(TIME_TO_START)
 
-pyautogui.alert('Formulario contestado exitosamente', 'Alerta')
+pyautogui.alert('Proceso terminado...', 'Alerta')   
 input("terminar?")
 
 # allTheKeys = ['\t', '\n', '\r', ' ', '!', '"', '#', '$', '%', '&', "'", '(',
