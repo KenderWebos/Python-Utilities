@@ -35,29 +35,6 @@ def makeSpace(multiplier):
     '''  
     print("-----"*multiplier)
 
-class person():
-
-    def __init__(self, name, age,):
-        self.name = name
-        self.age = age
-
-    def presentate(self):
-        return f"Hello my name is {self.name} and i am {self.age} years old"
-
-    def getName(self):
-        return self.name
-
-    def getAge(self):
-        return self.age
-
-    def setName(self, name):
-        self.name = name
-
-    def setAge(self, age):
-        self.age = age
-
-    def toString(self):
-        return f"{self.name} - {self.age}"
 
 def google(text):
     """Example Google style docstrings.
