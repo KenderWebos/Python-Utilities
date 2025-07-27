@@ -1,0 +1,46 @@
+{
+  "sample_rate": 44100,
+  "duration": 0.2,
+  "key_debounce": 0.05,
+  "mouse_debounce": 0.01,
+  "key_categories": {
+    "letters": {
+      "keys": "abcdefghijklmnopqrstuvwxyz",
+      "pitch_range": [200, 400]
+    },
+    "numbers": {
+      "keys": "0123456789",
+      "pitch_range": [400, 600]
+    },
+    "symbols": {
+      "keys": "!@#$%^&*()_+-=[]{}|;:,.<>?/~`\"'\\",
+      "pitch_range": [600, 800]
+    },
+    "function": {
+      "keys": ["esc", "enter", "space", "tab", "backspace", "delete", "insert",
+               "home", "end", "page up", "page down", "up", "down",
+               "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12"],
+      "pitch_range": [800, 1000]
+    },
+    "mouse_left": {
+      "keys": ["left"],
+      "pitch_range": [1000, 1100]
+    },
+    "mouse_right": {
+      "keys": ["right"],
+      "pitch_range": [300, 400]
+    },
+    "mouse_middle": {
+      "keys": ["middle"],
+      "pitch_range": [1000, 1100]
+    },
+    "mouse_wheel": {
+      "keys": ["wheel"],
+      "pitch_range": [100, 200]
+    },
+    "volume": {
+      "keys": ["volume up", "volume down"],
+      "pitch_range": [100, 200]
+    }
+  }
+} 
